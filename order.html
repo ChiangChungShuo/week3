@@ -142,6 +142,15 @@
                       </button>
                     </div>
                   </div>
+                  <div v-else>
+                    <!-- 如果一開始沒有新增多圖就需要這個 -->
+                    <button
+                      class="btn btn-outline-primary btn-sm d-block w-100"
+                      @click="createImages"
+                    >
+                      新增圖片
+                    </button>
+                  </div>
                 </div>
                 <div class="col-sm-8">
                   <div class="mb-3">

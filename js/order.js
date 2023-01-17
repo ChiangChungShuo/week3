@@ -100,7 +100,14 @@ methods: {
     delProductModal.show();//呼叫方法
   }
  },
+ createImages(type){
+  if(type="init"){
+    this.tempProduct.imagesUrl=[];
+  }
+  this.tempProduct.imagesUrl.push('')//多圖區
 },
+},
+
 mounted() {
    // 取出 Token
    const token = document.cookie.replace(/(?:(?:^|.*;\s*)azraelkToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
